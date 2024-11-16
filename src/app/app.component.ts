@@ -15,7 +15,6 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 })
 export class AppComponent {
   displayedColumns: string[] = ['id', 'name', 'email', 'role'];
-  title = 'angular-api';
   private usuarios: Usuario[] = [];
   dataSource = new MatTableDataSource<Usuario>();
   @ViewChild(MatPaginator) paginator!: MatPaginator;
